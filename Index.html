@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming room</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <form action="rezultati.php" method="post">
+        <h1>GAMBLING</h1>
+
+        <div class="game-container">
+            <div class="player">
+                <label for="player1">Igralec 1:</label>
+                <input type="text" id="player1" name="player1" required><br><br>
+                <div class="dice">🎲 🎲</div>
+                <p>Seštevek kock: </p>
+            </div>
+            <div class="player">
+                <label for="player2">Igralec 2:</label>
+                <input type="text" id="player2" name="player2" required><br><br>
+                <div class="dice">🎲 🎲</div>
+                <p>Seštevek kock: </p>
+            </div>
+            <div class="player">
+                <label for="player3">Igralec 3:</label>
+                <input type="text" id="player3" name="player3" required><br><br>
+                <div class="dice">🎲 🎲</div>
+                <p>Seštevek kock: </p>
+            </div>
+        </div>
+
+        <label for="kocke">Število kock:</label>
+        <select name="stevilokock" id="kocke">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+        <br><label for="igre">Število iger:</label>
+        <select name="steviloiger" id="igre">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+        <br><input id="igraj" type="submit" value="igraj">
+    </form>
+
+</body>
+</html>
